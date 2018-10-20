@@ -22,14 +22,14 @@
 // Introduction Section
 #intro:before {
     background-image: url('./assets/images/Stars.svg');
-    background-position: top center;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: 150%;
     content: '';
     height: 100%;
     position: absolute;
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
     width: 100%;
 }
 
