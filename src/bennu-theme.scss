@@ -1,3 +1,73 @@
 .section {
     min-height: 100vh;
 }
+
+@-webkit-keyframes levitate {
+    0%, 100% {
+        height: 75%;
+    }
+    50% {
+        height: 70%;
+    }
+}
+@keyframes levitate {
+    0%, 100% {
+        height: 75%;
+    }
+    50% {
+        height: 73%;
+    }
+}
+
+// Introduction Section
+#intro:before {
+    background-image: url('./assets/images/Stars.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    width: 100%;
+}
+
+#intro {
+    overflow: hidden;
+    position: relative;
+
+    .bennu-container {
+        animation: levitate 3s ease-in-out infinite;
+        background-image: url('./assets/images/Bennu.svg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        bottom: 0;
+        height: 75%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    @media (max-width: 599px) {
+        .bennu-container {
+            background-size: cover;
+        }
+    }
+
+    .intro-content {
+        background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 96%);
+        position: relative;
+        text-align: center;
+        z-index: 1;
+
+        h1 {
+            font-size: 300%;
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+}
