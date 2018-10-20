@@ -1,10 +1,11 @@
 /**
- * NgModule that includes all Story modules that are required to serve the application
+ * NgModule that includes all Story components and modules that are required to serve the application
  */
 
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from '../shared/shared.module';
 
+// Import story page components here
 import { AboutSiteComponent } from './about-site/about-site.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { KnowledgeJourneyComponent } from './knowledge-journey/knowledge-journey.component';
@@ -26,7 +27,7 @@ const declarations = [
         declarations
     ],
     imports: [
-        FlexLayoutModule
+        SharedModule
     ],
     exports: [
         declarations,

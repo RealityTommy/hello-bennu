@@ -28,8 +28,16 @@ $hello-bennu-theme: mat-light-theme($hello-bennu-primary, $hello-bennu-accent, $
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Montserrat', sans-serif; }
+html, body { 
+    background-color: #071621;
+    height: 100%;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    color: #FFFFFF;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
