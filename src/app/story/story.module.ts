@@ -3,6 +3,7 @@
  */
 
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AboutSiteComponent } from './about-site/about-site.component';
 import { IntroductionComponent } from './introduction/introduction.component';
@@ -24,7 +25,9 @@ const declarations = [
     declarations: [
         declarations
     ],
-    imports: [],
+    imports: [
+        FlexLayoutModule
+    ],
     exports: [
         declarations,
     ]
