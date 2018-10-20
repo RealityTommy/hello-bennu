@@ -9,10 +9,13 @@ import { SharedModule } from './shared/shared.module';
 import { StoryModule } from './story/story.module';
 import { StoryComponent } from './story/story.component';
 
+import { AboutComponent } from './about/about.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    StoryComponent
+    StoryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
