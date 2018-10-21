@@ -214,19 +214,25 @@ body:before {
     .survival-content {
 
         .bennu {
-            -webkit-animation: BennuSurvival 10s linear infinite;
-            animation: BennuSurvival 10s linear infinite;
+            -webkit-animation: Bounce 10s linear infinite;
+            animation: Bounce 10s linear infinite;
             height: auto;
             width: 100%;
         }
 
         .asteroids {
-            -webkit-animation: BennuSurvival 10s linear infinite;
-            animation: BennuSurvival 10s linear infinite;
+            -webkit-animation: Bounce 10s linear infinite;
+            animation: Bounce 10s linear infinite;
             height: auto;
             margin-left: 30%;
             margin-top: -60%;
             width: 100%;
+        }
+
+        @media (max-width: 859px) {
+            .bennu {
+                margin-top: 128px;
+            }
         }
     }
 }
@@ -237,22 +243,89 @@ body:before {
     z-index: 1;
     
     .knowledge-content {
+        img {
+            height: auto;
+            width: 100%;
+        }
 
         .part-1 {
+            .osiris-rex {
+                // -webkit-animation: Bounce 10s linear infinite;
+                // animation: Bounce 10s linear infinite;
+            }
+
+            .mapcam {
+                margin-top: -255px;
+            }
+
+            .polycam {
+                margin-top: -48px;
+            }
         }
 
         .part-2 {
-            margin-top: 4vh;
+            position: relative;
+            margin-top: 25vh;
+
+            .hedgehog {
+                bottom: 18vh;
+                height: auto;
+                left: 0;
+                position: absolute;
+                width: 5%;
+            }
+
+            .overlay-bottom {
+                background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 96%);
+                bottom: -94px;
+                height: 25vh;
+                left: 0;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                z-index: 1;
+            }
         }
 
         .part-3 {
-            margin-top: 4vh;
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 80%, #000000 100%);
+            padding-top: 50vh;
+
+            .hammer {
+                height: 255px;
+                margin-right: 10vw;
+                width: auto;
+            }
+
+            .tesla {
+                height: auto;
+                margin-left: 25vw;
+                width: 94px;
+            }
         }
 
         @media (max-width: 859px) {
             .part-2 {
-                max-width: 90vw;
-                padding: 0 8px;
+                .observatories {
+                    margin-top: 255px;
+                }
+
+                .overlay-bottom {
+                    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 99.99%) !important;
+                    bottom: 10vh;
+                }
+            }
+
+            .part-3 {
+                margin-top: -25vh;
+
+                .hammer {
+                    margin-right: 12px;
+                }
+    
+                .tesla {
+                    margin-left: 12px;
+                }
             }
         }
     }
