@@ -54,17 +54,17 @@
 
 @-webkit-keyframes Bounce {
     0%, 100% {
-        margin-bottom: 0%;
+        top: 10%;
     }
     50% {
-        margin-bottom: -10%;
+        top: 15%;
     }
 }
 @keyframes Bounce {
     0%, 100% {
-        margin-bottom: 0%;
+        top: 10%;
     }
     50% {
-        margin-bottom: -10%;
+        top: 15%;
     }
 }
