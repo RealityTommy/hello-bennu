@@ -9,7 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AboutBennuComponent } from './about-bennu/about-bennu.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { KnowledgeJourneyComponent } from './knowledge-journey/knowledge-journey.component';
-import { LearnMoreComponent } from './learn-more/learn-more.component';
+import { ReferencesComponent } from './referenes/references.component';
 import { RiskToEarthComponent } from './risk-to-earth/risk-to-earth.component';
 import { SurvivalComponent } from './survival/suvival.component';
 
@@ -17,7 +17,7 @@ const declarations = [
     AboutBennuComponent,
     IntroductionComponent,
     KnowledgeJourneyComponent,
-    LearnMoreComponent,
+    ReferencesComponent,
     RiskToEarthComponent,
     SurvivalComponent
 ];
