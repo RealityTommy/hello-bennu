@@ -14,7 +14,6 @@
         bottom: -28vh;
     }
 }
-
 @-webkit-keyframes IntroBennuMobile {
     0%, 100% {
         bottom: -15vh;
@@ -55,6 +54,7 @@
 
 #story {
     overflow: hidden;
+    padding-bottom: 25vh;
     position: relative;
 }
 
@@ -199,6 +199,8 @@ body:before {
         }
 
         .part-2 {
+            margin-top: 8vh;
+
             .earth-hit {
                 height: auto;
                 width: 100%;
@@ -206,6 +208,8 @@ body:before {
         }
 
         .part-3 {
+            margin-top: 4vh;
+
             .city {
                 height: auto;
                 width: 100%;
