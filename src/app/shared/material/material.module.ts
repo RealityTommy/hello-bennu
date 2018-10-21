@@ -6,16 +6,16 @@ import { NgModule } from '@angular/core';
 
 // Import all material modules here
 import {
-    MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatTooltipModule
 } from '@angular/material';
 
 // Array variable to use all material modules
 const modules = [
-    MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatTooltipModule
 ];
 
 @NgModule({
