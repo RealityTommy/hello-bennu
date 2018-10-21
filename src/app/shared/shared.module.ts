@@ -5,11 +5,13 @@
 import { NgModule } from '@angular/core';
 
 // Imports material and flexlayout modules
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Array variable to use all material modules
 const modules = [
+    BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
 ];

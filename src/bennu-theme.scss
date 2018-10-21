@@ -1,13 +1,9 @@
-.section {
-    padding-top: 15%;
-}
-
 @-webkit-keyframes IntroBennuDesktop {
     0%, 100% {
         bottom: -25vh;
     }
     50% {
-        bottom: -27vh;
+        bottom: -28vh;
     }
 }
 @keyframes IntroBennuDesktop {
@@ -15,7 +11,7 @@
         bottom: -25vh;
     }
     50% {
-        bottom: -27vh;
+        bottom: -28vh;
     }
 }
 
@@ -24,7 +20,7 @@
         bottom: -15vh;
     }
     50% {
-        bottom: -17vh;
+        bottom: -18vh;
     }
 }
 @keyframes IntroBennuMobile {
@@ -32,7 +28,7 @@
         bottom: -15vh;
     }
     50% {
-        bottom: -17vh;
+        bottom: -18vh;
     }
 }
 
@@ -58,7 +54,20 @@
 }
 
 #story {
+    overflow: hidden;
     position: relative;
+}
+
+.small-section {
+    min-height: 75vh;
+}
+
+.medium-section {
+    min-height: 100vh;
+}
+
+.large-section {
+    min-height: 110vh;
 }
 
 // Introduction Section
@@ -105,7 +114,7 @@ body:before {
     }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 859px) {
     #intro {
         .intro-content {
             background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 99.99%) !important;
@@ -130,14 +139,9 @@ body:before {
 #about {
     .about-content {
         background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 80%, #000000 100%);
-        position: relative;
         min-height: 100vh;
+        position: relative;
         z-index: 1;
-
-        img {
-            height: auto;
-            width: 100%;
-        }
 
         .carbon-atom {
             height: auto;
@@ -147,6 +151,87 @@ body:before {
         .bennu-orbital {
             -webkit-animation: Rotate 250s linear infinite;
             animation: Rotate 250s linear infinite;
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+#risk {
+    margin-top: 45vh;
+
+    .risk-content {
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+        
+        .part-1 {
+            .bennu {
+                height: auto;
+                position: absolute;
+                width: 2.5%;
+            }
+    
+            .earth {
+                -webkit-animation: Rotate 100s linear infinite;
+                animation: Rotate 100s linear infinite;
+                height: auto;
+                right: -15%;
+                position: absolute;
+                top: 10%;
+                width: 50%;
+            }
+
+            @media (max-width: 859px) {
+                .bennu {
+                    height: auto;
+                    position: absolute;
+                    width: 5%;
+                }
+    
+                .earth {
+                    margin-top: 50%;
+                    right: -25%;
+                    top: 60vh;
+                    width: 75%;
+                }
+            }
+        }
+
+        .part-2 {
+            .earth-hit {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .part-3 {
+            .city {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 859px) {
+    #risk {
+        margin-top: 94px;
+
+        .part-2 {
+            margin-top: 64px;
+
+            .earth-hit {
+                margin-top: -64px;
+            }
+        }
+
+        .part-3 {
+            margin-top: 64px;
+
+            .city {
+                margin-bottom: -64px;
+            }
         }
     }
 }

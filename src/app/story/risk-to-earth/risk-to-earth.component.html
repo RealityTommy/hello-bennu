@@ -1,5 +1,51 @@
-<div class="section" fxLayout="row" fxLayoutAlign="center start">
-    <div fxFlex="90">
-        <h1>Risk to Earth</h1>
+<div id="risk">
+    <div class="risk-content" fxLayout="row" fxLayoutAlign="center center">
+        <div fxFlex="90" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="64px">
+            <div class="part-1" fxLayout="column" fxLayoutGap="64px">
+                <div class="large-section" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+                    <div fxFlex="50" fxFlex="50" fxFlex.xs="100" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutGap="16px">
+                        <h1>What if Bennu collides with Earth?</h1>
+                        <p>
+                            Scientists currently know only a fraction of Bennu’s demographics based on observations made by the Arecibo Observatory Planetary Radar and the Goldstone Deep Space Network. Most of the predicted effects of collision is assumed based on approximated estimates.
+                        </p>
+                    </div>
+                </div>
+                <div class="large-section" fxLayout="row" fxLayoutAlign="center start" fxFill>
+                    <div fxFlex="50">
+                        <img class="bennu" src="./assets/images/Bennu.svg" alt="Bennu"
+                            [ngStyle]="{'left.px': bennuX, 'top.px': bennuY}">
+                    </div>
+                    <div>
+                        <img class="earth" src="./assets/images/Earth.svg" alt="Earth">
+                    </div>
+                </div>
+            </div>
+
+            <div class="part-2" fxLayout="column">
+                <div class="small-section" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="64px">
+                    <div fxFlex="50" data-aos="fade-left" data-aos-delay="1250" data-aos-duration="1000" fxFlex="50" fxFlex.xs="100" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutGap="16px">
+                        <p>
+                            Currently observed travelling at 101,388.67 kilometers per hour, if Bennu is on a direct collision course with Earth, then its speed would decrease to around 43,452.29 kilometers per hour as it enters our atmosphere.
+                        </p>
+                    </div>
+                    <div fxFlex="50" fxFlex="50" fxFlex.xs="100" fxLayout="column" fxLayoutAlign.xs="center center">
+                        <img class="earth-hit" src="./assets/images/EarthHit.svg" alt="Earth hit by Bennu">
+                    </div>
+                </div>
+            </div>
+
+            <div class="part-3" fxLayout="column">
+                <div class="small-section" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="64px">
+                    <div fxFlex="50" fxFlex="50" fxFlex.xs="100" fxLayout="column" fxLayoutAlign.xs="center center">
+                        <img class="city" src="./assets/images/NewYork.svg" alt="City">
+                    </div>
+                    <div fxFlex="50" data-aos="fade-left" data-aos-delay="1250" data-aos-duration="1000" fxFlex="50" fxFlex.xs="100" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutGap="16px">
+                        <p>
+                            Despite being only 42.9% of its original speed as it hits the surface of Earth, the impact of the asteroid would potentially release energy equivalent to 1,450 megatons of TNT and annihilate everything in a 50 kilometer radius. The aftershock would further impact several hundred kilometers more of area.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
