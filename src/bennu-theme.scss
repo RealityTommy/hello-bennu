@@ -235,7 +235,7 @@ body:before {
         @media (max-width: 859px) {
             .bennu {
                 margin-top: initial;
-                top: 70%;
+                top: 75%;
                 width: 50%;
             }
 
@@ -302,10 +302,15 @@ body:before {
         }
 
         .part-2 {
-            margin-top: 45vh;
+            margin-top: 1000px;
             position: relative;
 
+            .text {
+                margin-bottom: 25%;
+            }
+
             .observatories {
+                margin-top: 25vh;
                 bottom: 0;
                 position: absolute;
             }
@@ -332,7 +337,7 @@ body:before {
 
         .part-3 {
             background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 80%, #000000 100%);
-            padding-top: 50vh;
+            padding-top: 50%;
             margin-top: -64px;
 
             .hammer {
@@ -345,6 +350,35 @@ body:before {
                 height: auto;
                 margin-left: 25vw;
                 width: 94px;
+            }
+        }
+
+        @media (max-height: 799px) {
+            .part-1 {
+
+                .mapcam {
+                    margin-top: 25%;
+                }
+    
+                .polycam {
+                    margin-top: 25%;
+                }
+    
+                .samcam {
+                    margin-top: 25%;
+                }
+            }
+
+            .part-2 {
+                margin-top: 60%;
+
+                .text {
+                    margin-bottom: 45%;
+                }
+            }
+
+            .part-3 {
+                padding-top: 250px;
             }
         }
 
@@ -372,6 +406,12 @@ body:before {
             }
 
             .part-2 {
+                margin-top: 50%;
+
+                .text {
+                    margin-bottom: 25%;
+                }
+
                 .observatories {
                     margin-top: 255px;
                 }
@@ -383,7 +423,7 @@ body:before {
             }
 
             .part-3 {
-                margin-top: -25vh;
+                padding-top: 250px;
 
                 .hammer {
                     margin-right: 12px;
