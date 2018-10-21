@@ -23,7 +23,15 @@
     
     .horizontal-section {
         min-width: 100%;
-        max-width: 100%;
+    }
+}
+
+@media (max-width: 859px) {
+    .horizontal-sections {
+        
+        .horizontal-section {
+            max-width: 10vw;
+        }
     }
 }
 
@@ -239,6 +247,13 @@ body:before {
 
         .part-3 {
             margin-top: 4vh;
+        }
+
+        @media (max-width: 859px) {
+            .part-2 {
+                max-width: 90vw;
+                padding: 0 8px;
+            }
         }
     }
 }
