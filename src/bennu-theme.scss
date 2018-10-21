@@ -2,7 +2,7 @@
 
 #story {
     overflow: hidden;
-    padding-bottom: 25vh;
+    padding-bottom: 50vh;
     position: relative;
 }
 
@@ -16,6 +16,15 @@
 
 .large-section {
     min-height: 110vh;
+}
+
+.horizontal-sections {
+    overflow-x: scroll;
+    
+    .horizontal-section {
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
 
 // Introduction Section
@@ -190,19 +199,46 @@ body:before {
 
 #survival {
     margin-top: 45vh;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
 
     .survival-content {
 
         .bennu {
+            -webkit-animation: BennuSurvival 10s linear infinite;
+            animation: BennuSurvival 10s linear infinite;
             height: auto;
             width: 100%;
         }
 
         .asteroids {
+            -webkit-animation: BennuSurvival 10s linear infinite;
+            animation: BennuSurvival 10s linear infinite;
             height: auto;
             margin-left: 30%;
             margin-top: -60%;
             width: 100%;
+        }
+    }
+}
+
+#knowledge {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    
+    .knowledge-content {
+
+        .part-1 {
+        }
+
+        .part-2 {
+            margin-top: 4vh;
+        }
+
+        .part-3 {
+            margin-top: 4vh;
         }
     }
 }
