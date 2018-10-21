@@ -1,0 +1,70 @@
+@-webkit-keyframes IntroBennuDesktop {
+    0%, 100% {
+        bottom: -25vh;
+    }
+    50% {
+        bottom: -28vh;
+    }
+}
+@keyframes IntroBennuDesktop {
+    0%, 100% {
+        bottom: -25vh;
+    }
+    50% {
+        bottom: -28vh;
+    }
+}
+@-webkit-keyframes IntroBennuMobile {
+    0%, 100% {
+        bottom: -15vh;
+    }
+    50% {
+        bottom: -18vh;
+    }
+}
+@keyframes IntroBennuMobile {
+    0%, 100% {
+        bottom: -15vh;
+    }
+    50% {
+        bottom: -18vh;
+    }
+}
+
+@-webkit-keyframes Rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes Rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes BennuSurvival {
+    0%, 100% {
+        margin-bottom: 0%;
+    }
+    50% {
+        margin-bottom: -10%;
+    }
+}
+@keyframes BennuSurvival {
+    0%, 100% {
+        margin-bottom: 0%;
+    }
+    50% {
+        margin-bottom: -10%;
+    }
+}
